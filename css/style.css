@@ -1,0 +1,391 @@
+
+
+
+/**fuentes 
+font-family: "Poppins", sans-serif;
+font-family: "Roboto", sans-serif;
+
+
+#F2CBC2
+#84BFB4
+#A8BFBB
+**/
+
+/** STYLE DE PROYECTO-Segunda entrega
+La página "Shop" se desarrollo utilizando unicamente BOOTSTRAP.
+La pagina "Inicio" "Contacto" y tratamiento tiene maquetado Flex.
+La pagina "Promociones" tiene maquetado Grid.
+
+**/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+/**
+header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #84BFB4;
+    width: 100%     ;
+    height: 125px;
+    justify-content: space-between;
+}
+**/
+
+
+.grid {
+    display: grid;  
+    width: 100% ;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(6, 1fr);   
+    grid-template-areas: 
+    "div1 div1 div2"
+    "div3 div3 div3"
+    "div4 div4 div4"
+    "div5 div6 div6"
+    "div7 div7 div7"
+    "div8 div8 div9"
+;
+column-gap: 20px;
+row-gap: 10px;
+justify-content: center;
+align-content: center;
+
+}
+.grid .div1 {
+    
+    grid-area: div1;
+}
+
+.grid .div2 {
+    
+    grid-area: div2;
+}
+
+.grid .div3 {
+    background-color: #F2CBC2;
+    grid-area: div3;
+}
+
+.grid .div4 {
+    
+    grid-area: div4;
+}
+
+.grid .div5 {
+    background-color: #F2CBC2;
+    grid-area: div5;
+}
+
+.grid .div6 {
+    
+    grid-area: div6;
+}
+.grid .div7 {
+    
+    grid-area: div6;
+}
+
+.grid .div8 {
+    background-color: #F2CBC2;
+    grid-area: div6;
+}
+
+.grid .div9 {
+    
+    grid-area: div6;
+}
+
+.img1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    order: 1;
+}
+.img2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    order: 2;
+}
+.img3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    order: 3;
+}
+
+.img4{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    order: 4;
+}
+
+.img5{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    order: 5;
+}
+
+.img6{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    order: 6;
+}
+
+.img7{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    order: 7;
+}
+
+.img8{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    order: 8;
+}
+.img9{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    order: 9;
+}
+header {
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #84BFB4;
+    color: white;
+    align-items: center; 
+    position: fixed ;
+    top: 0;
+}
+.navBar {
+    display: flex;
+    list-style: none;
+    gap: 1.875rem;
+    padding: 30px;
+    
+}
+
+.navBar li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.img-principal div img {
+    width: 100%;
+    height: 100%;
+
+}
+
+header h1{
+    font-family: "Poppins", sans-serif;
+    padding: 50px;
+
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+
+}
+    
+.imaInic {
+    width: 28%;
+    height: 28%;
+    align-items: right;
+}    
+
+
+.imaPeq {
+    width: 5%;
+    height: 5%;
+    align-items: right;
+}    
+
+
+.parrPrinc {
+    background-color: #F2CBC2;
+    padding: 10px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.parrCompl {
+    background-color: #F2CBC2;
+    padding: 10px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+.parrShop {
+    background-color: #F2CBC2;
+    padding: 10px;
+    width: 50%;
+    margin: 10px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+
+p {
+    font-family: "Roboto", sans-serif;
+
+}
+
+article {
+    font-family: "Roboto", sans-serif;
+}
+
+
+.section-principal {
+    width: 100%;
+    height: 500px;
+    background-color: lightcoral;
+    background-image: url("../assets/img/LOTR.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+} 
+
+.section-principal h2 {
+    font-size: 2em;
+
+}
+
+.dejaMens {
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+.navBarFoot{
+        background-color: #A8BFBB;
+    }
+    
+
+footer {
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #A8BFBB;
+    width: 25px    ;
+    height: 25px;
+
+}
+
+
+.futBar {
+display: flex;
+flex-direction: row;
+background-color: #A8BFBB;
+padding-bottom: 20px;
+}
+
+.futBar li a {
+    text-decoration: none;
+    color: white;
+}
+
+.encabezado{
+    display: flex;
+}
+
+
+
+@media (max-width: 1024px) {
+    header{
+        background-color: #84BFB4
+    }
+    
+    .navBar li a{
+        color: #84BFB4;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        background-color: #F2CBC2;
+
+    .section-principal {
+        background-position: center;
+    }
+    .section-principal {
+        background-position: center ;
+    
+    }
+
+
+    }
+
+    .navBar li a{
+        color: white;
+        
+    }
+}
+
+@media (max-width: 425px) {
+
+    background-color: #F2CBC2;
+
+
+        .navBar{
+            flex-direction: column;
+            padding-right: none;
+            align-items: center;
+        }
+
+        .navBar li a{
+            font-size: 23px;
+            
+
+        }
+
+}
+
+
